@@ -11,7 +11,7 @@ const CartPage = () => {
 
     useEffect(()=>{
         setTotal(cart.reduce((pv,cv)=>pv+cv.price,0));
-    },[cart]);
+    },[]);
 
     const checkoutHandle=()=>{
         dispatch({type:'REMOVE_ALL_CART'});
